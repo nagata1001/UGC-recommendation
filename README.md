@@ -8,7 +8,6 @@
 intern/
 ├─ data/                  # UGC 测试数据
 ├─ report/                # 测试结果
-├─ indexes/               # FAISS 索引与元数据
 ├─ src/                   # 编码、OCR、建库和检索代码
 ├─ tests/                 # 不依赖模型的快速测试
 ├─ app.py                 # 命令行入口
