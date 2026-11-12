@@ -1,0 +1,526 @@
+{
+  "task": "simulated_user_posts_and_creator_profile_update",
+  "users": 6,
+  "posts": 12,
+  "applied_events": 12,
+  "update_policy": {
+    "publish_strength": 0.4,
+    "tag_confidence": 0.9,
+    "repeat_decay": "0.7 ^ previous_evidence_count",
+    "long_term_multiplier": 0.6,
+    "short_term_multiplier": 1.0,
+    "session_multiplier": 1.0
+  },
+  "events": [
+    {
+      "user_id": "user-001",
+      "event_id": "publish:user-001:1",
+      "status": "applied",
+      "post_id": "sim-post-user-001-01",
+      "tag_updates": [
+        {
+          "tag": "体育运动",
+          "confidence": 0.9,
+          "delta": 0.36,
+          "before": {
+            "long_term_weight": 0.0,
+            "short_term_weight": 0.0,
+            "session_weight": 0.0
+          },
+          "after": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          }
+        },
+        {
+          "tag": "旅行户外",
+          "confidence": 0.9,
+          "delta": 0.36,
+          "before": {
+            "long_term_weight": 0.0,
+            "short_term_weight": 0.0,
+            "session_weight": 0.0
+          },
+          "after": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          }
+        }
+      ]
+    },
+    {
+      "user_id": "user-001",
+      "event_id": "publish:user-001:2",
+      "status": "applied",
+      "post_id": "sim-post-user-001-02",
+      "tag_updates": [
+        {
+          "tag": "旅行户外",
+          "confidence": 0.9,
+          "delta": 0.252,
+          "before": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          },
+          "after": {
+            "long_term_weight": 0.367156,
+            "short_term_weight": 0.611376,
+            "session_weight": 0.578648
+          }
+        }
+      ]
+    },
+    {
+      "user_id": "user-002",
+      "event_id": "publish:user-002:1",
+      "status": "applied",
+      "post_id": "sim-post-user-002-01",
+      "tag_updates": [
+        {
+          "tag": "体育运动",
+          "confidence": 0.9,
+          "delta": 0.36,
+          "before": {
+            "long_term_weight": 0.0,
+            "short_term_weight": 0.0,
+            "session_weight": 0.0
+          },
+          "after": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          }
+        }
+      ]
+    },
+    {
+      "user_id": "user-002",
+      "event_id": "publish:user-002:2",
+      "status": "applied",
+      "post_id": "sim-post-user-002-02",
+      "tag_updates": [
+        {
+          "tag": "体育运动",
+          "confidence": 0.9,
+          "delta": 0.252,
+          "before": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          },
+          "after": {
+            "long_term_weight": 0.367156,
+            "short_term_weight": 0.611376,
+            "session_weight": 0.578648
+          }
+        }
+      ]
+    },
+    {
+      "user_id": "user-003",
+      "event_id": "publish:user-003:1",
+      "status": "applied",
+      "post_id": "sim-post-user-003-01",
+      "tag_updates": [
+        {
+          "tag": "美食烹饪",
+          "confidence": 0.9,
+          "delta": 0.36,
+          "before": {
+            "long_term_weight": 0.0,
+            "short_term_weight": 0.0,
+            "session_weight": 0.0
+          },
+          "after": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          }
+        }
+      ]
+    },
+    {
+      "user_id": "user-003",
+      "event_id": "publish:user-003:2",
+      "status": "applied",
+      "post_id": "sim-post-user-003-02",
+      "tag_updates": [
+        {
+          "tag": "美食烹饪",
+          "confidence": 0.9,
+          "delta": 0.252,
+          "before": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          },
+          "after": {
+            "long_term_weight": 0.367156,
+            "short_term_weight": 0.611376,
+            "session_weight": 0.578648
+          }
+        }
+      ]
+    },
+    {
+      "user_id": "user-004",
+      "event_id": "publish:user-004:1",
+      "status": "applied",
+      "post_id": "sim-post-user-004-01",
+      "tag_updates": [
+        {
+          "tag": "交通工具",
+          "confidence": 0.9,
+          "delta": 0.36,
+          "before": {
+            "long_term_weight": 0.0,
+            "short_term_weight": 0.0,
+            "session_weight": 0.0
+          },
+          "after": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          }
+        }
+      ]
+    },
+    {
+      "user_id": "user-004",
+      "event_id": "publish:user-004:2",
+      "status": "applied",
+      "post_id": "sim-post-user-004-02",
+      "tag_updates": [
+        {
+          "tag": "交通工具",
+          "confidence": 0.9,
+          "delta": 0.252,
+          "before": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          },
+          "after": {
+            "long_term_weight": 0.367156,
+            "short_term_weight": 0.611376,
+            "session_weight": 0.578648
+          }
+        }
+      ]
+    },
+    {
+      "user_id": "user-005",
+      "event_id": "publish:user-005:1",
+      "status": "applied",
+      "post_id": "sim-post-user-005-01",
+      "tag_updates": [
+        {
+          "tag": "动物自然",
+          "confidence": 0.9,
+          "delta": 0.36,
+          "before": {
+            "long_term_weight": 0.0,
+            "short_term_weight": 0.0,
+            "session_weight": 0.0
+          },
+          "after": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          }
+        },
+        {
+          "tag": "旅行户外",
+          "confidence": 0.9,
+          "delta": 0.36,
+          "before": {
+            "long_term_weight": 0.0,
+            "short_term_weight": 0.0,
+            "session_weight": 0.0
+          },
+          "after": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          }
+        }
+      ]
+    },
+    {
+      "user_id": "user-005",
+      "event_id": "publish:user-005:2",
+      "status": "applied",
+      "post_id": "sim-post-user-005-02",
+      "tag_updates": [
+        {
+          "tag": "动物自然",
+          "confidence": 0.9,
+          "delta": 0.252,
+          "before": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          },
+          "after": {
+            "long_term_weight": 0.367156,
+            "short_term_weight": 0.611376,
+            "session_weight": 0.578648
+          }
+        }
+      ]
+    },
+    {
+      "user_id": "user-006",
+      "event_id": "publish:user-006:1",
+      "status": "applied",
+      "post_id": "sim-post-user-006-01",
+      "tag_updates": [
+        {
+          "tag": "科技数码",
+          "confidence": 0.9,
+          "delta": 0.36,
+          "before": {
+            "long_term_weight": 0.0,
+            "short_term_weight": 0.0,
+            "session_weight": 0.0
+          },
+          "after": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          }
+        }
+      ]
+    },
+    {
+      "user_id": "user-006",
+      "event_id": "publish:user-006:2",
+      "status": "applied",
+      "post_id": "sim-post-user-006-02",
+      "tag_updates": [
+        {
+          "tag": "科技数码",
+          "confidence": 0.9,
+          "delta": 0.252,
+          "before": {
+            "long_term_weight": 0.216,
+            "short_term_weight": 0.36,
+            "session_weight": 0.36
+          },
+          "after": {
+            "long_term_weight": 0.367156,
+            "short_term_weight": 0.611376,
+            "session_weight": 0.578648
+          }
+        }
+      ]
+    }
+  ],
+  "users_after_update": [
+    {
+      "user_id": "user-001",
+      "published_post_count": 2,
+      "creator_stage": "warming",
+      "creator_tag_bag": [
+        {
+          "tag_id": "creator:旅行户外",
+          "name": "旅行户外",
+          "categories": [
+            "旅行户外"
+          ],
+          "long_term_weight": 0.367156,
+          "short_term_weight": 0.611376,
+          "session_weight": 0.578648,
+          "negative_weight": 0.0,
+          "confidence": 0.9,
+          "evidence_count": 2,
+          "sources": {
+            "registration_selection": 0.0,
+            "behavior": 0.0,
+            "published_post": 0.612
+          },
+          "last_event": "publish",
+          "updated_at": "2026-11-11T10:10:00+08:00"
+        },
+        {
+          "tag_id": "creator:体育运动",
+          "name": "体育运动",
+          "categories": [
+            "体育运动"
+          ],
+          "long_term_weight": 0.216,
+          "short_term_weight": 0.36,
+          "session_weight": 0.36,
+          "negative_weight": 0.0,
+          "confidence": 0.9,
+          "evidence_count": 1,
+          "sources": {
+            "registration_selection": 0.0,
+            "behavior": 0.0,
+            "published_post": 0.36
+          },
+          "last_event": "publish",
+          "updated_at": "2026-11-11T09:35:00+08:00"
+        }
+      ]
+    },
+    {
+      "user_id": "user-002",
+      "published_post_count": 2,
+      "creator_stage": "warming",
+      "creator_tag_bag": [
+        {
+          "tag_id": "creator:体育运动",
+          "name": "体育运动",
+          "categories": [
+            "体育运动"
+          ],
+          "long_term_weight": 0.367156,
+          "short_term_weight": 0.611376,
+          "session_weight": 0.578648,
+          "negative_weight": 0.0,
+          "confidence": 0.9,
+          "evidence_count": 2,
+          "sources": {
+            "registration_selection": 0.0,
+            "behavior": 0.0,
+            "published_post": 0.612
+          },
+          "last_event": "publish",
+          "updated_at": "2026-11-11T11:20:00+08:00"
+        }
+      ]
+    },
+    {
+      "user_id": "user-003",
+      "published_post_count": 2,
+      "creator_stage": "warming",
+      "creator_tag_bag": [
+        {
+          "tag_id": "creator:美食烹饪",
+          "name": "美食烹饪",
+          "categories": [
+            "美食烹饪"
+          ],
+          "long_term_weight": 0.367156,
+          "short_term_weight": 0.611376,
+          "session_weight": 0.578648,
+          "negative_weight": 0.0,
+          "confidence": 0.9,
+          "evidence_count": 2,
+          "sources": {
+            "registration_selection": 0.0,
+            "behavior": 0.0,
+            "published_post": 0.612
+          },
+          "last_event": "publish",
+          "updated_at": "2026-11-11T12:30:00+08:00"
+        }
+      ]
+    },
+    {
+      "user_id": "user-004",
+      "published_post_count": 2,
+      "creator_stage": "warming",
+      "creator_tag_bag": [
+        {
+          "tag_id": "creator:交通工具",
+          "name": "交通工具",
+          "categories": [
+            "交通工具"
+          ],
+          "long_term_weight": 0.367156,
+          "short_term_weight": 0.611376,
+          "session_weight": 0.578648,
+          "negative_weight": 0.0,
+          "confidence": 0.9,
+          "evidence_count": 2,
+          "sources": {
+            "registration_selection": 0.0,
+            "behavior": 0.0,
+            "published_post": 0.612
+          },
+          "last_event": "publish",
+          "updated_at": "2026-11-11T13:40:00+08:00"
+        }
+      ]
+    },
+    {
+      "user_id": "user-005",
+      "published_post_count": 2,
+      "creator_stage": "warming",
+      "creator_tag_bag": [
+        {
+          "tag_id": "creator:动物自然",
+          "name": "动物自然",
+          "categories": [
+            "动物自然"
+          ],
+          "long_term_weight": 0.367156,
+          "short_term_weight": 0.611376,
+          "session_weight": 0.578648,
+          "negative_weight": 0.0,
+          "confidence": 0.9,
+          "evidence_count": 2,
+          "sources": {
+            "registration_selection": 0.0,
+            "behavior": 0.0,
+            "published_post": 0.612
+          },
+          "last_event": "publish",
+          "updated_at": "2026-11-11T14:50:00+08:00"
+        },
+        {
+          "tag_id": "creator:旅行户外",
+          "name": "旅行户外",
+          "categories": [
+            "旅行户外"
+          ],
+          "long_term_weight": 0.216,
+          "short_term_weight": 0.36,
+          "session_weight": 0.36,
+          "negative_weight": 0.0,
+          "confidence": 0.9,
+          "evidence_count": 1,
+          "sources": {
+            "registration_selection": 0.0,
+            "behavior": 0.0,
+            "published_post": 0.36
+          },
+          "last_event": "publish",
+          "updated_at": "2026-11-11T14:15:00+08:00"
+        }
+      ]
+    },
+    {
+      "user_id": "user-006",
+      "published_post_count": 2,
+      "creator_stage": "warming",
+      "creator_tag_bag": [
+        {
+          "tag_id": "creator:科技数码",
+          "name": "科技数码",
+          "categories": [
+            "科技数码"
+          ],
+          "long_term_weight": 0.367156,
+          "short_term_weight": 0.611376,
+          "session_weight": 0.578648,
+          "negative_weight": 0.0,
+          "confidence": 0.9,
+          "evidence_count": 2,
+          "sources": {
+            "registration_selection": 0.0,
+            "behavior": 0.0,
+            "published_post": 0.612
+          },
+          "last_event": "publish",
+          "updated_at": "2026-11-11T16:00:00+08:00"
+        }
+      ]
+    }
+  ]
+}

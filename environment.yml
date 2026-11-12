@@ -1,0 +1,10 @@
+name: ugc-minimal
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy=2.0
+  - pillow=11
+  - faiss-cpu=1.15.1

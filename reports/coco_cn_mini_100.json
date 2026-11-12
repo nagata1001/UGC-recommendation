@@ -1,0 +1,16 @@
+{
+  "task": "cross_modal_retrieval",
+  "dataset": "coco_cn_mini_100",
+  "samples": 100,
+  "text_to_image": {
+    "R@1": 0.8,
+    "R@5": 1.0,
+    "R@10": 1.0
+  },
+  "image_to_text": {
+    "R@1": 0.83,
+    "R@5": 1.0,
+    "R@10": 1.0
+  },
+  "mean_recall": 0.9383333333333334
+}

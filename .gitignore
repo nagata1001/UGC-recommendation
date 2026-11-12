@@ -1,0 +1,13 @@
+.venv/
+.conda/
+.cache/
+models/
+indexes/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+data/demo/*.png
+data/demo/ugc.jsonl
+data/sources/
+data/eval/*/images/
+

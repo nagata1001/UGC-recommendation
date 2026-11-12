@@ -1,0 +1,6 @@
+{"user_id":"user-001","gender":"女","age":22,"region":"上海","selected_interests":[{"name":"旅行与海滩","weight":1.0},{"name":"摄影","weight":0.7},{"name":"冲浪和户外活动","weight":0.5}]}
+{"user_id":"user-002","gender":"男","age":29,"region":"北京","selected_interests":[{"name":"体育运动","weight":1.0},{"name":"网球","weight":0.9},{"name":"滑雪","weight":0.6}]}
+{"user_id":"user-003","gender":"女","age":35,"region":"成都","selected_interests":[{"name":"美食","weight":1.0},{"name":"烹饪","weight":0.8},{"name":"餐厅探店","weight":0.6}]}
+{"user_id":"user-004","gender":"男","age":41,"region":"广州","selected_interests":[{"name":"汽车与火车","weight":1.0},{"name":"城市交通","weight":0.8},{"name":"旅行","weight":0.4}]}
+{"user_id":"user-005","gender":"女","age":26,"region":"杭州","selected_interests":[{"name":"动物","weight":1.0},{"name":"自然风景","weight":0.9},{"name":"户外生活","weight":0.6}]}
+{"user_id":"user-006","gender":"男","age":31,"region":"深圳","selected_interests":[{"name":"科技和电子产品","weight":1.0},{"name":"电脑办公","weight":0.8},{"name":"城市生活","weight":0.5}]}

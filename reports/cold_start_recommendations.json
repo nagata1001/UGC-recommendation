@@ -1,0 +1,768 @@
+{
+  "task": "cold_start_recommendation",
+  "users": 6,
+  "candidates": 100,
+  "top_k": 5,
+  "model": "Chinese-CLIP ViT-B/16",
+  "score_weights": {
+    "semantic": 0.68,
+    "interest_match": 0.18,
+    "popularity": 0.05,
+    "quality": 0.05,
+    "region": 0.02,
+    "exploration": 0.02
+  },
+  "demographic_policy": "性别和年龄仅作为画像字段保存，当前不直接参与排序；地区仅在内容存在地域字段时弱加权。",
+  "results": [
+    {
+      "user_id": "user-001",
+      "initial_profile": {
+        "user_id": "user-001",
+        "gender": "女",
+        "age": 22,
+        "region": "上海",
+        "selected_interests": [
+          {
+            "name": "旅行与海滩",
+            "weight": 1.0
+          },
+          {
+            "name": "摄影",
+            "weight": 0.7
+          },
+          {
+            "name": "冲浪和户外活动",
+            "weight": 0.5
+          }
+        ]
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "ugc_id": "COCO_val2014_000000171819",
+          "text": "有一男一女两个冲浪者拿着各自的冲浪板站在海滩上。",
+          "image": "images\\COCO_val2014_000000171819.jpg",
+          "score": 0.719251,
+          "score_detail": {
+            "semantic": 0.747732,
+            "interest_match": 0.681818,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.903308,
+            "total": 0.719251
+          },
+          "matched_categories": [
+            "体育运动",
+            "旅行户外"
+          ],
+          "reason": "匹配兴趣类别（体育运动、旅行户外），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 2,
+          "ugc_id": "COCO_train2014_000000011831",
+          "text": "海滩上方飘着一只风筝",
+          "image": "images\\COCO_train2014_000000011831.jpg",
+          "score": 0.71511,
+          "score_detail": {
+            "semantic": 0.753448,
+            "interest_match": 0.681818,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.501883,
+            "total": 0.71511
+          },
+          "matched_categories": [
+            "旅行户外"
+          ],
+          "reason": "匹配兴趣类别（旅行户外），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 3,
+          "ugc_id": "COCO_val2014_000000477867",
+          "text": "有一个穿黑衣的年轻人正在水中冲浪，旁边岸上还有几个人抱着冲浪板正在做准备。",
+          "image": "images\\COCO_val2014_000000477867.jpg",
+          "score": 0.71487,
+          "score_detail": {
+            "semantic": 0.748179,
+            "interest_match": 0.681818,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.669038,
+            "total": 0.71487
+          },
+          "matched_categories": [
+            "体育运动",
+            "旅行户外"
+          ],
+          "reason": "匹配兴趣类别（体育运动、旅行户外），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 4,
+          "ugc_id": "COCO_train2014_000000354237",
+          "text": "一个女人拿着冲浪板站在海滩上",
+          "image": "images\\COCO_train2014_000000354237.jpg",
+          "score": 0.710334,
+          "score_detail": {
+            "semantic": 0.755023,
+            "interest_match": 0.681818,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.209559,
+            "total": 0.710334
+          },
+          "matched_categories": [
+            "体育运动",
+            "旅行户外"
+          ],
+          "reason": "匹配兴趣类别（体育运动、旅行户外），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 5,
+          "ugc_id": "COCO_train2014_000000453643",
+          "text": "这是一幅画，里面一个男孩和一个女孩坐在海滩上的一把椅子上。",
+          "image": "images\\COCO_train2014_000000453643.jpg",
+          "score": 0.703378,
+          "score_detail": {
+            "semantic": 0.735654,
+            "interest_match": 0.681818,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.520306,
+            "total": 0.703378
+          },
+          "matched_categories": [
+            "旅行户外"
+          ],
+          "reason": "匹配兴趣类别（旅行户外），并与初选兴趣的图文语义接近"
+        }
+      ]
+    },
+    {
+      "user_id": "user-002",
+      "initial_profile": {
+        "user_id": "user-002",
+        "gender": "男",
+        "age": 29,
+        "region": "北京",
+        "selected_interests": [
+          {
+            "name": "体育运动",
+            "weight": 1.0
+          },
+          {
+            "name": "网球",
+            "weight": 0.9
+          },
+          {
+            "name": "滑雪",
+            "weight": 0.6
+          }
+        ]
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "ugc_id": "COCO_val2014_000000319184",
+          "text": "体育场内正在进行一场英式橄榄球比赛。",
+          "image": "images\\COCO_val2014_000000319184.jpg",
+          "score": 0.769562,
+          "score_detail": {
+            "semantic": 0.738849,
+            "interest_match": 1.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.857225,
+            "total": 0.769562
+          },
+          "matched_categories": [
+            "体育运动"
+          ],
+          "reason": "匹配兴趣类别（体育运动），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 2,
+          "ugc_id": "COCO_train2014_000000035948",
+          "text": "一个女孩在网球场打网球。",
+          "image": "images\\COCO_train2014_000000035948.jpg",
+          "score": 0.768482,
+          "score_detail": {
+            "semantic": 0.739417,
+            "interest_match": 1.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.783929,
+            "total": 0.768482
+          },
+          "matched_categories": [
+            "体育运动"
+          ],
+          "reason": "匹配兴趣类别（体育运动），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 3,
+          "ugc_id": "COCO_train2014_000000250576",
+          "text": "一男一女在山坡上滑雪",
+          "image": "images\\COCO_train2014_000000250576.jpg",
+          "score": 0.766518,
+          "score_detail": {
+            "semantic": 0.730314,
+            "interest_match": 1.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.995223,
+            "total": 0.766518
+          },
+          "matched_categories": [
+            "体育运动"
+          ],
+          "reason": "匹配兴趣类别（体育运动），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 4,
+          "ugc_id": "COCO_val2014_000000246014",
+          "text": "网球场上一名运动员正在打比赛，旁边有裁判和许多观众",
+          "image": "images\\COCO_val2014_000000246014.jpg",
+          "score": 0.765173,
+          "score_detail": {
+            "semantic": 0.73384,
+            "interest_match": 1.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.808073,
+            "total": 0.765173
+          },
+          "matched_categories": [
+            "体育运动"
+          ],
+          "reason": "匹配兴趣类别（体育运动），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 5,
+          "ugc_id": "COCO_train2014_000000416202",
+          "text": "一个年轻的女子网球选手在红土上正准备用网球正手动作击打飞过来的球。",
+          "image": "images\\COCO_train2014_000000416202.jpg",
+          "score": 0.761326,
+          "score_detail": {
+            "semantic": 0.724528,
+            "interest_match": 1.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.932352,
+            "total": 0.761326
+          },
+          "matched_categories": [
+            "体育运动"
+          ],
+          "reason": "匹配兴趣类别（体育运动），并与初选兴趣的图文语义接近"
+        }
+      ]
+    },
+    {
+      "user_id": "user-003",
+      "initial_profile": {
+        "user_id": "user-003",
+        "gender": "女",
+        "age": 35,
+        "region": "成都",
+        "selected_interests": [
+          {
+            "name": "美食",
+            "weight": 1.0
+          },
+          {
+            "name": "烹饪",
+            "weight": 0.8
+          },
+          {
+            "name": "餐厅探店",
+            "weight": 0.6
+          }
+        ]
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "ugc_id": "COCO_train2014_000000023451",
+          "text": "一个木制桌子上放着一盘蛋糕与一杯咖啡",
+          "image": "images\\COCO_train2014_000000023451.jpg",
+          "score": 0.753667,
+          "score_detail": {
+            "semantic": 0.722315,
+            "interest_match": 1.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.624634,
+            "total": 0.753667
+          },
+          "matched_categories": [
+            "美食烹饪"
+          ],
+          "reason": "匹配兴趣类别（美食烹饪），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 2,
+          "ugc_id": "COCO_train2014_000000442232",
+          "text": "餐厅里一个男人正在吃一角披萨饼",
+          "image": "images\\COCO_train2014_000000442232.jpg",
+          "score": 0.739917,
+          "score_detail": {
+            "semantic": 0.710841,
+            "interest_match": 1.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.327229,
+            "total": 0.739917
+          },
+          "matched_categories": [
+            "美食烹饪"
+          ],
+          "reason": "匹配兴趣类别（美食烹饪），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 3,
+          "ugc_id": "COCO_train2014_000000359439",
+          "text": "一个橙色的杯子旁放着一个橙色的勺子和一个盛着橙色奶酪的盘子",
+          "image": "images\\COCO_train2014_000000359439.jpg",
+          "score": 0.72677,
+          "score_detail": {
+            "semantic": 0.687048,
+            "interest_match": 1.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.478842,
+            "total": 0.72677
+          },
+          "matched_categories": [
+            "美食烹饪"
+          ],
+          "reason": "匹配兴趣类别（美食烹饪），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 4,
+          "ugc_id": "COCO_train2014_000000480313",
+          "text": "一个戴着墨镜的男人手中拿着一个热狗。",
+          "image": "images\\COCO_train2014_000000480313.jpg",
+          "score": 0.722396,
+          "score_detail": {
+            "semantic": 0.693826,
+            "interest_match": 1.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.029691,
+            "total": 0.722396
+          },
+          "matched_categories": [
+            "美食烹饪"
+          ],
+          "reason": "匹配兴趣类别（美食烹饪），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 5,
+          "ugc_id": "COCO_val2014_000000275120",
+          "text": "大理石桌面上放了一个生日蛋糕，蛋糕旁边还放着一瓶威士忌和一盒蜡烛",
+          "image": "images\\COCO_val2014_000000275120.jpg",
+          "score": 0.721876,
+          "score_detail": {
+            "semantic": 0.672062,
+            "interest_match": 1.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.743707,
+            "total": 0.721876
+          },
+          "matched_categories": [
+            "美食烹饪"
+          ],
+          "reason": "匹配兴趣类别（美食烹饪），并与初选兴趣的图文语义接近"
+        }
+      ]
+    },
+    {
+      "user_id": "user-004",
+      "initial_profile": {
+        "user_id": "user-004",
+        "gender": "男",
+        "age": 41,
+        "region": "广州",
+        "selected_interests": [
+          {
+            "name": "汽车与火车",
+            "weight": 1.0
+          },
+          {
+            "name": "城市交通",
+            "weight": 0.8
+          },
+          {
+            "name": "旅行",
+            "weight": 0.4
+          }
+        ]
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "ugc_id": "COCO_val2014_000000332545",
+          "text": "两栋高层建筑前面有一个置有许多不同的道路交通标志的路口。",
+          "image": "images\\COCO_val2014_000000332545.jpg",
+          "score": 0.74159,
+          "score_detail": {
+            "semantic": 0.747339,
+            "interest_match": 0.818182,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.806334,
+            "total": 0.74159
+          },
+          "matched_categories": [
+            "交通工具"
+          ],
+          "reason": "匹配兴趣类别（交通工具），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 2,
+          "ugc_id": "COCO_train2014_000000152764",
+          "text": "摩托车停放点并排听着4辆黑色的摩托车。",
+          "image": "images\\COCO_train2014_000000152764.jpg",
+          "score": 0.73863,
+          "score_detail": {
+            "semantic": 0.746437,
+            "interest_match": 0.818182,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.688981,
+            "total": 0.73863
+          },
+          "matched_categories": [
+            "交通工具"
+          ],
+          "reason": "匹配兴趣类别（交通工具），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 3,
+          "ugc_id": "COCO_train2014_000000503310",
+          "text": "飞机上的一排座位空空的。",
+          "image": "images\\COCO_train2014_000000503310.jpg",
+          "score": 0.734339,
+          "score_detail": {
+            "semantic": 0.735207,
+            "interest_match": 0.818182,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.856241,
+            "total": 0.734339
+          },
+          "matched_categories": [
+            "交通工具"
+          ],
+          "reason": "匹配兴趣类别（交通工具），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 4,
+          "ugc_id": "COCO_val2014_000000448690",
+          "text": "飞机的机翼下站着许多人",
+          "image": "images\\COCO_val2014_000000448690.jpg",
+          "score": 0.73251,
+          "score_detail": {
+            "semantic": 0.741785,
+            "interest_match": 0.818182,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.54116,
+            "total": 0.73251
+          },
+          "matched_categories": [
+            "交通工具"
+          ],
+          "reason": "匹配兴趣类别（交通工具），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 5,
+          "ugc_id": "COCO_val2014_000000407168",
+          "text": "一辆红色的火车停在站台。",
+          "image": "images\\COCO_val2014_000000407168.jpg",
+          "score": 0.732142,
+          "score_detail": {
+            "semantic": 0.749359,
+            "interest_match": 0.818182,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.265233,
+            "total": 0.732142
+          },
+          "matched_categories": [
+            "交通工具"
+          ],
+          "reason": "匹配兴趣类别（交通工具），并与初选兴趣的图文语义接近"
+        }
+      ]
+    },
+    {
+      "user_id": "user-005",
+      "initial_profile": {
+        "user_id": "user-005",
+        "gender": "女",
+        "age": 26,
+        "region": "杭州",
+        "selected_interests": [
+          {
+            "name": "动物",
+            "weight": 1.0
+          },
+          {
+            "name": "自然风景",
+            "weight": 0.9
+          },
+          {
+            "name": "户外生活",
+            "weight": 0.6
+          }
+        ]
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "ugc_id": "COCO_val2014_000000112240",
+          "text": "公园里的海滩，树和草坪",
+          "image": "images\\COCO_val2014_000000112240.jpg",
+          "score": 0.737853,
+          "score_detail": {
+            "semantic": 0.711432,
+            "interest_match": 1.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.203993,
+            "total": 0.737853
+          },
+          "matched_categories": [
+            "动物自然",
+            "旅行户外"
+          ],
+          "reason": "匹配兴趣类别（动物自然、旅行户外），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 2,
+          "ugc_id": "COCO_train2014_000000532304",
+          "text": "一个小山坡前有许多电线",
+          "image": "images\\COCO_train2014_000000532304.jpg",
+          "score": 0.717439,
+          "score_detail": {
+            "semantic": 0.727802,
+            "interest_match": 0.76,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.786693,
+            "total": 0.717439
+          },
+          "matched_categories": [
+            "动物自然"
+          ],
+          "reason": "匹配兴趣类别（动物自然），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 3,
+          "ugc_id": "COCO_train2014_000000250576",
+          "text": "一男一女在山坡上滑雪",
+          "image": "images\\COCO_train2014_000000250576.jpg",
+          "score": 0.711359,
+          "score_detail": {
+            "semantic": 0.723177,
+            "interest_match": 0.76,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.639909,
+            "total": 0.711359
+          },
+          "matched_categories": [
+            "动物自然"
+          ],
+          "reason": "匹配兴趣类别（动物自然），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 4,
+          "ugc_id": "COCO_val2014_000000534394",
+          "text": "街道边一大群羊正在跨过低矮的围墙向草地走去。",
+          "image": "images\\COCO_val2014_000000534394.jpg",
+          "score": 0.704297,
+          "score_detail": {
+            "semantic": 0.724457,
+            "interest_match": 0.76,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.243296,
+            "total": 0.704297
+          },
+          "matched_categories": [
+            "动物自然"
+          ],
+          "reason": "匹配兴趣类别（动物自然），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 5,
+          "ugc_id": "COCO_train2014_000000383991",
+          "text": "动物园里有的树旁有两只长颈鹿",
+          "image": "images\\COCO_train2014_000000383991.jpg",
+          "score": 0.704227,
+          "score_detail": {
+            "semantic": 0.731175,
+            "interest_match": 0.76,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.011376,
+            "total": 0.704227
+          },
+          "matched_categories": [
+            "动物自然"
+          ],
+          "reason": "匹配兴趣类别（动物自然），并与初选兴趣的图文语义接近"
+        }
+      ]
+    },
+    {
+      "user_id": "user-006",
+      "initial_profile": {
+        "user_id": "user-006",
+        "gender": "男",
+        "age": 31,
+        "region": "深圳",
+        "selected_interests": [
+          {
+            "name": "科技和电子产品",
+            "weight": 1.0
+          },
+          {
+            "name": "电脑办公",
+            "weight": 0.8
+          },
+          {
+            "name": "城市生活",
+            "weight": 0.5
+          }
+        ]
+      },
+      "recommendations": [
+        {
+          "rank": 1,
+          "ugc_id": "COCO_train2014_000000153542",
+          "text": "有一台台式电脑和一台笔记本电脑在桌子上摆着。",
+          "image": "images\\COCO_train2014_000000153542.jpg",
+          "score": 0.749964,
+          "score_detail": {
+            "semantic": 0.788313,
+            "interest_match": 0.782609,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.152082,
+            "total": 0.749964
+          },
+          "matched_categories": [
+            "科技数码"
+          ],
+          "reason": "匹配兴趣类别（科技数码），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 2,
+          "ugc_id": "COCO_train2014_000000073494",
+          "text": "一张桌子上有一台台式电脑和一台笔记本电脑。",
+          "image": "images\\COCO_train2014_000000073494.jpg",
+          "score": 0.742274,
+          "score_detail": {
+            "semantic": 0.769982,
+            "interest_match": 0.782609,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.390852,
+            "total": 0.742274
+          },
+          "matched_categories": [
+            "科技数码"
+          ],
+          "reason": "匹配兴趣类别（科技数码），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 3,
+          "ugc_id": "COCO_train2014_000000265586",
+          "text": "一个男人坐在办公桌前指着键盘。",
+          "image": "images\\COCO_train2014_000000265586.jpg",
+          "score": 0.714936,
+          "score_detail": {
+            "semantic": 0.740987,
+            "interest_match": 0.782609,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.009744,
+            "total": 0.714936
+          },
+          "matched_categories": [
+            "科技数码"
+          ],
+          "reason": "匹配兴趣类别（科技数码），并与初选兴趣的图文语义接近"
+        },
+        {
+          "rank": 4,
+          "ugc_id": "COCO_val2014_000000041507",
+          "text": "盘子里盛放着午餐。",
+          "image": "images\\COCO_val2014_000000041507.jpg",
+          "score": 0.606012,
+          "score_detail": {
+            "semantic": 0.769674,
+            "interest_match": 0.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.631684,
+            "total": 0.606012
+          },
+          "matched_categories": [],
+          "reason": "与初选兴趣（科技和电子产品、电脑办公、城市生活）的图文语义接近"
+        },
+        {
+          "rank": 5,
+          "ugc_id": "COCO_val2014_000000390099",
+          "text": "一位男子抱着一个小男孩在打游戏。",
+          "image": "images\\COCO_val2014_000000390099.jpg",
+          "score": 0.598418,
+          "score_detail": {
+            "semantic": 0.758224,
+            "interest_match": 0.0,
+            "popularity": 0.5,
+            "quality": 0.7,
+            "region": 0.5,
+            "exploration": 0.641292,
+            "total": 0.598418
+          },
+          "matched_categories": [],
+          "reason": "与初选兴趣（科技和电子产品、电脑办公、城市生活）的图文语义接近"
+        }
+      ]
+    }
+  ]
+}
