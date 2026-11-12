@@ -10,4 +10,4 @@ data/demo/*.png
 data/demo/ugc.jsonl
 data/sources/
 data/eval/*/images/
-
+scripts/
