@@ -6,9 +6,8 @@
 
 ```text
 intern/
-├─ .cache/                # Hugging Face 与 Paddle 缓存
-├─ models/                # Chinese-CLIP 本地模型
 ├─ data/                  # UGC 测试数据
+├─ report/                # 测试结果
 ├─ indexes/               # FAISS 索引与元数据
 ├─ src/                   # 编码、OCR、建库和检索代码
 ├─ tests/                 # 不依赖模型的快速测试
@@ -18,16 +17,11 @@ intern/
 
 ## 快速开始
 
-本项目使用 Anaconda 中名为 `ugc-minimal` 的 Python 3.12 独立环境。请先打开 Anaconda PowerShell Prompt，进入项目并激活环境：
+进入项目并安装环境：
 
 ```powershell
-cd E:\master\intern
+conda create -f environment.yaml
 conda activate ugc-minimal
-python app.py doctor
-python app.py download
-python app.py demo-data
-python app.py build --input data\demo\ugc.jsonl
-python app.py search --text "红色圆形" --top-k 3
 ```
 
 如需把图片中的文字合并到 UGC 文本后再编码：
