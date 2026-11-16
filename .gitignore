@@ -1,6 +1,7 @@
 .venv/
 .conda/
 .cache/
+.vscode/
 models/
 indexes/
 __pycache__/
